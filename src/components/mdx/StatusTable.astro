@@ -1,0 +1,32 @@
+---
+import { Image } from 'astro:assets';
+
+// [imported icon, name, description]
+interface StatusTuple extends Array<ImageMetadata|string>{0:ImageMetadata, 1:string, 2:string}
+
+interface Props {
+  data: Array<StatusTuple>;
+}
+
+const props = Astro.props;
+---
+<table>
+    <thead>
+        <tr>
+            <th>Icon</th>
+            <th class="text-left">Name</th>
+            <th class="text-left">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {
+            props.data.map((status) => (
+                <tr>
+                    <th><Image src={status[0]} alt={status[1]} class="mx-auto" /></th>
+                    <th class="text-left">{status[1]}</th>
+                    <th class="text-left">{status[2]}</th>
+                </tr>
+            ))
+        }
+    </tbody>
+</table>

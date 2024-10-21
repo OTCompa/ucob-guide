@@ -1,0 +1,26 @@
+---
+layout: '@/layouts/Layout.astro'
+title: "Statuses"
+nav_order: 2
+show_toc: false
+---
+
+import StatusTable from '@/components/mdx/StatusTable.astro'
+
+import slashing from '../../assets/icons/slashing.png'
+import damagedown from '../../assets/icons/damagedown.png'
+import neurolink from '../../assets/icons/neurolink.png'
+import burns from '../../assets/icons/burns.png'
+import manahyper from '../../assets/icons/manahyper.png'
+
+export const twinStatusData = [
+    [burns, "Burns", "Sustaining fire damage over time."],
+    [damagedown, "Damage Down", "Damage dealt is reduced."],
+    [manahyper, "Mana Hypersensitivity", "Additional damage taken from Hatch."],
+    [neurolink, "Neurolink", "Movement is slowed, damage dealt and HP recovery via actions is reduced."],
+    [slashing, "Slashing Resistance Down II", "Slashing resistance is significantly reduced."],
+]
+
+
+## Twintania
+<StatusTable data={twinStatusData}/>
