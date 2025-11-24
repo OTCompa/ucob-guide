@@ -6,3 +6,102 @@ nav_order: 1
 show_toc: false
 ---
 
+{/* Components */}
+import Notification from '@/components/mdx/Notification.astro'
+import NASpecific from '@/components/mdx/NASpecific.astro'
+import Status from '@/components/mdx/Status.astro'
+
+{/* Statuses */}
+import earth from '../../assets/icons/earth.png'
+import sludge from '../../assets/icons/sludge.png'
+
+<Notification title="NA strat tl;dr (X Quickmarch)">
+    When the three Dragons spawn, **treat this as the relative north for the rest of the mechanic**.  
+    Split into pre-determined Quickmarch spots (THDD N->S on each side).  
+    Wait for the dive down mid and dodge twisters as the dragons dive.  
+    Bait ground AOEs.  
+
+    DPS earthshaker SE, healer earthshakers NW/NE, megaflare stack SW.  
+    Megaflare resolves, tanks take tethers if they don't already have them. 
+    Earthshakers resolve, earthshaker players move out of the dropped puddle.  
+    Tempest Wing tethers resolve.  
+
+    Flare Breath then Flatten on MT.
+</Notification>
+
+## General Breakdown
+The first Trio starts off requiring the use of the predetermined "Quickmarch" spots [first determined before the pull.](../general#prepull-setup)
+
+### Dives and Puddle Baits
+After the Quickmarch castbar Bahamut will become untargetable and disappear, shortly reappearing alongside Twintainia and Nael on the edge of the arena centered on one of 
+the cardinal or intercardinal directions. This direction should be treated as the **relative north** for the rest of the mechanic.  
+When referencing cardinal/intercardinal directions during this part of the guide, they should be treated as relative to where the dragons originally spawned at this point.
+
+After spawning the dragons will begin casting their respective dives, **Megaflare Dive**, **Lunar Dive** and **Twisting Dive** respectively. Locate the bosses as quickly as possible and split
+to your side and spot determined by your Quickmarch spot. L1-4 go West, R1-4 go East.
+
+Whenever Twintania casts **Twisting Dive**, she will also snapshot twisters under up to 4 players. This can be dealt with by moving as Twin dives, the snapshot for Twister happens as she dives.  
+Walk in slightly after the dive to avoid the twister, and to bait the Megaflare puddles before moving to deal with the second part of the mechanic. Make sure to not stack on top of other players 
+here as 4 non-tank players will be randomly targeted by Megaflare single-target AOE damage too that will deal enough damage to kill if two overlap without significant mitigation.
+
+### Earthshakers, Stack and Tempest Wing tethers
+<NASpecific>
+In NA PF the standard is to do the X Quickmarch strat, however there are multiple ways to deal with the earthshakers and the megaflare stack.
+</NASpecific>
+
+After the dives and puddle baits, two healers and one random DPS will be assigned with an Earthshaker Marker above their head, this signifies they'll be taking a 90 degree conal AOE that
+applies a <Status name="Earth Resistance Down II" img={earth} /> debuff to anyone it hits. Taking an extra earthshaker while inflicted (via overlap, for example) will result in death without heavy mitigation/invuln.  
+On top of this, once earthshakers resolve a small puddle will be placed at the point you were when you take damage from the earthshaker, staying in this puddle for too long will inflict a <Status name="Sludge" img={sludge} /> dot debuff, killing you in a tick.  
+The remaining DPS players will be targeted with Megaflare stacks, marked with a distinctive ring effect around their player model. At the time of resolution, the megaflare stacks will target one of the ringed
+players at random, and split damage between any players tightly stacked with the targeted player.  
+Finally, two tethers will randomly spawn on players, these tethers are light-hitting AOE tankbusters that will kill a non-tank who is unmitigated, but are easily taken and survived by tanks. Anyone hit by the AOE effect of the
+tempest wing will take damage and be knocked back into the wall.
+
+#### Resolution Order
+Firstly the stack will resolve, then a second later the earthshakers will resolve, this gives the tanks time to pick up the tethers during/after the stack and dodge the earthshakers.
+Finally, a brief moment after the tempest wing tethers will resolve and then Quickmarch has finished, and Flare Breath and Flatten tankbusters follow shortly before the next Trio.
+
+It all happens relatively quickly, but its distinctive enough that there is enough time for tanks to dodge the earthshakers then return to their positions to take the tempest wing mini-busters.
+Players should also take note that after the tempest wings resolve Bahamut will very quickly follow up with a Flare Breath, so to remain away from the direction of the MT that will be cleaved by a conal AOE.
+
+## Role Breakdown
+### Tank
+- Find the dragons
+- Go to your QM spot.
+- Move in, stay away from the middle to bait the puddles, you wont get a Megaflare AOE damage but CAN be targeted for the puddle.
+- Wait for Megaflare stack to resolve and pick up tethers during/after.
+- Dodge earthshakers then immediately return to your position to take tempest wing.
+- Handle tankbusters post-QM accordingly.
+
+### Healer
+- Find the dragons
+- Go to your QM spot.
+- Move in, stay away from the middle to bait the puddles.
+- Heal before the Megaflare stack.
+- Position for your earthshakers.
+- Move for the puddle after the earthshaker resolves.
+
+### DPS
+- Find the dragons
+- Go to your QM spot.
+- When Megaflare stack marks go out, if you do not have a ring around you, you will be the earthshaker DPS.
+#### Earthshaker DPS
+- Position for your earthshakers.
+- Move for the puddle after the earthshaker resolves.
+#### Megaflare DPS
+- Position for the stack with the two other Megaflare marked players.
+
+## Recovery
+If things go wrong there's a number of things that can be done and recognised quickly to ensure that a wipe is avoided.
+
+In the case a healer dies early to the dive/twisters, before the earthshakers are assigned, the earthshaker that would have been given to that healer will be reassigned with priority on the Tanks.
+Watch your head if things go wrong, and adjust to where you know the missing Earthshaker player would have resolved theirs. You will be able to take a shaker and the wing with minimal mit and survive comfortably.
+
+In the case a DPS dies there's a chance that a healer can get a megaflare stack, and the earthshakers will end up on a healer, tank and DPS. 
+In this case you could opt to Tank LB1 if unsure if the stack will be taken with all 3 players, or adjust around accordingly. As long as you're attentive its very possible to avoid a wipe in all cases,
+and lose as minimal amount of people as possible.
+
+<Notification title="Golden Tip!!" type="secondary">
+    Never wall if you have raises alive. 
+    Its always better to see progression & the DPS check is very forgiving, plenty of pulls have made it to the end after nearly wiping in the early phases.
+</Notification>
