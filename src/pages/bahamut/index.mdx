@@ -5,3 +5,66 @@ nav_order: 4
 show_toc: false
 ---
 
+{/*
+    TODO:
+    - Add pictures for Tankbusters
+    - Write it cleaner?
+*/}
+
+import Notification from '@/components/mdx/Notification.astro'
+import Grid from '@/components/mdx/Grid.astro'
+
+<Grid cols="1" class="grid-lg-col-2">
+    <Notification title="Phase order pre-heavensfall">
+      Transition  
+      Flare breath + Flatten  
+      **Quickmarch**  
+      Flare breath + Flatten  
+      **Blackfire**  
+      Triple Flare breath  
+      Gigaflare  
+      **Fellruin**  
+      Gigaflare  
+      Flare Breath + Flatten + Flare Breath  
+    </Notification>
+
+    <Notification title="Phase order Heavensfall+">
+      **Heavensfall**  
+      Gigaflare  
+      Triple Flare breath  
+      **Tenstrike**  
+      Gigaflare  
+      Flatten  
+      Flare breath  
+      **Grand Octet**
+    </Notification>
+</Grid>
+
+## Overview
+
+Bahamut Prime is a long, fixed phase consisting of short damage and tankbuster downtimes interrupted by "Trio" mechanics where the boss is untargetable. 
+These trios are named as such as the three bosses, Bahamut, Nael and Twin all make an appearance in each mechanic.
+
+Alongside surviving the phase to the end of its mechanics, there is a hidden fail-state that will come into play if the boss is not brought
+down to 59.9% HP by the time he disappears for Grand Octet. In the case you do not meet this DPS check you will not be punished immediately, during the following phase (Adds)
+you won't notice anything, but in the final phase the boss will have a damage up buff, causing him to deal 500% damage in his attacks, effectively rendering the phase unclearable for a standard group.[^1]
+
+As the phase is significant in length, generally speaking people will progress the phase trio by trio, rather than the phase as a whole, as this helps build consistency and find groups of players at a similar point within the phase.
+As such, we have split the guide into pages for each of the trios and this general page for the remaining in-between parts.
+
+## Tank Busters
+
+There are two different types of Tankbuster that Bahamut does during the phase while targetable, Flare Breaths and Flattens.
+
+### Flare Breath
+Each Flare Breath is an untelegraphed conal AOE tankbuster that should be pointed away from the party.
+It either comes in single alongside a Flatten, or as triple Flare Breath, hitting 3 times in quick succession.
+
+### Flatten
+A heavy hitting, casted tankbuster on the main aggro, unlike Twin and Nael this tankbuster does not apply any damage resistence down debuffs meaning that there's no need for a tank swap.
+
+---
+
+[^1]: While unclearable in pretty much any standard case, the 500% damage up buff is not technically unclearable:
+    - ["Golden God" UCoB Clear VOD](https://www.youtube.com/watch?v=0ivLvPhZ7DQ)
+    - [The amazing Kyou Kiri video explaining it](https://www.youtube.com/watch?v=p4MIykP1d5s)
