@@ -18,6 +18,7 @@ export const OPEN_GRAPH = {
 };
 
 export const SIDEBAR = [
+  { title: "Credits", url: "https://ucob.guide/credits", target: "_self" },
   { title: "NAUR Discord", url: "https://discord.gg/naurffxiv", target: "_blank" },
   { title: "Cob Enjoyers Discord", url: "https://discord.gg/77KUBgvKzz", target: "_blank" },
   { title: "Quick Resources Link", url: "https://resources.ucob.guide", target: "_blank" },
