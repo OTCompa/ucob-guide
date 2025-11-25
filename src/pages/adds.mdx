@@ -5,3 +5,115 @@ nav_order: 5
 show_toc: false
 ---
 
+{/* Components */}
+import Notification from '@/components/mdx/Notification.astro'
+import Card from '@/components/mdx/Card.astro'
+import NASpecific from '@/components/mdx/NASpecific.astro'
+import ImageWrapper from '@/components/mdx/ImageWrapper.astro'
+
+{/*
+
+## TODO
+- Add images for triple quote positioning
+- Finish mechanic breakdown
+  - Triple quotes + twister
+  - Forced tankswap
+- Add content for extra sections
+- Replace/remove placeholder footnote
+
+*/}
+
+<Notification title="NA strat tl;dr">
+    Tank bosses between 1 and 3 (NE-ish)  
+    Stacks during quotes are always taken in the center of the arena (4 marker)  
+    Spreads in rough-QM spots[^1]  
+</Notification>
+
+## Overview
+[Overall Raidplan](https://raidplan.io/plan/AMEhnLbUmlTb7ij3)  
+Adds phase consists of 2 similar mechanic loops where both Nael and Twintania are targetable at the same time.  
+Both bosses should be tanked on top of each other allowing for passive cleave.  
+There is a passively filled duty gauge indicating the timer for Teraflare (enrage).
+Nothing the player does affects the rate of which this duty gauge fills except defeating
+both Twintania and Nael.
+
+## Timeline Breakdown
+### First half
+
+<Card title="Mechanic Order">
+    - Plummet + Bahamut's Claw
+    - Liquid Hells
+    - Generate
+    - Twister
+    - Triple quotes
+    - Twister
+    - Megaflare
+    - Death Sentence + Ravensbeak
+</Card>
+
+#### Plummet + Bahamut's Claw
+Same mini-busters in Twintania and Nael phases
+The Twin tank should attempt to face the Plummet away from other players. Likewise, other players 
+including the Nael tank should also make an effort to not be in the way of the Plummet.
+#### Liquid Hells
+Same as the baited Liquid Hells in Twintania phase
+Generally, the physical ranged player will bait the Liquid Hells during this phase
+#### Generate + Twister Combo
+Hatch + Twister slightly similar to what happens in Twintania phase
+Hatches during this phase will always spawn in sets of 3 and will only target DPS.  
+Generally, the melee DPS and physical ranged have assigned Neurolinks (2 Neurolinks close to the bosses and far Neurolink
+respectively) where they will always intercept the Hatch. 
+<Notification title="Resolve Order">
+    Due to the difference in distance between Twintania and each of the Neurolinks, the Twister
+    may happen before or after the Hatch is close enough to be intercepted.  
+    The following works as a general rule:  
+    For the players using the **close** Neurolinks, they will resolve **Hatch first then Twister**.  
+    For the player using the **far** Neurolink, they will resolve **Twister first then Hatch**.
+</Notification>
+#### Triple quotes 
+Nael will perform a set of 3 mechanics back-to-back based on her RP text. There will be 4 possible combinations:
+- `From hallowed moon I bare iron, in my descent to wield!` (In > Out > Spread)
+- `From hallowed moon I descend, upon burning earth to tread!` (In > Spread > Stack)
+- `Unbending iron, descend with fiery edge!` (Out > Spread > Stack)
+- `Unbending iron, take fire and descend!` (Out > Stack > Spread)
+  
+Like Nael phase, reading the quotes quickly can be done by searching for keywords in the quote:
+- Moon = In
+- Iron = Out
+- Descend = Spread
+- Burning/Fire = Stack
+<NASpecific>
+    Stacks during the triple quotes should __always__ be taken in the center of the arena (4 marker).
+</NASpecific>
+
+### Second half
+
+<Card title="Mechanic Order">
+    - Plummet + Bahamut's Claw
+    - Liquid Hells
+    - Generate + Twister
+    - Triple quotes
+    - Twister
+    - Death Sentence + Ravensbeak
+    - Megaflare
+    - Teraflare (enrage)
+</Card>
+
+<br/>
+
+This half is mostly a repeat of the previous half except the order of the 
+Death Sentence + Ravensbeak combo is swapped with the Megaflare.  
+<Notification title="Second Half Triple Quotes">
+If the first triple quote begins with a Lunar Dynamo (in), this triple quote will __always__ 
+be one of the two quotes that start with an Iron Chariot (out) and vice versa.
+</Notification>
+
+## Role Breakdown and Tips
+### Tank
+### Healer
+### DPS
+
+## Recovery
+---
+
+[^1]: asdf
